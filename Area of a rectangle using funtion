@@ -1,0 +1,77 @@
+//without return,without parameter
+
+#include<stdio.h>
+void rect();
+void main()
+{
+    
+    rect();
+}
+void rect()
+{
+    int length,breadth,Area;
+    printf("Enter the values:");
+    scanf("%d%d",&length,&breadth);
+    Area=length*breadth;
+    printf("\nArea of a rectangle is :%d",Area);
+}
+*****************************************************************************************
+
+//without return,with parameter
+
+#include<stdio.h>
+void rect(int,int);
+void main()
+{
+    int length,breadth;
+    printf("Enter the values:");
+    scanf("%d%d",&length,&breadth);
+    rect(length,breadth);
+}
+void rect(int length,int breadth)
+{
+    int Area;
+    Area=length*breadth;
+    printf("\nArea of a rectangle is :%d",Area);
+}
+*********************************************************************************************
+
+//with return,without parameter
+
+#include<stdio.h>
+int rect();
+void main()
+{
+    int ans;
+    ans=rect();
+    printf("\nArea of a rectangle is :%d",ans);
+}
+int rect()
+{
+    int length,breadth,Area;
+    printf("Enter the number:");
+    scanf("%d%d",&length,&breadth);
+    Area=length*breadth;
+    return Area;
+}
+************************************************************************************************
+
+//with return,with parameter
+
+#include<stdio.h>
+int rect(int,int);
+void main()
+{
+    int length,breadth,ans;
+    printf("Enter the values:");
+    scanf("%d%d",&length,&breadth);
+    ans=rect(length,breadth);
+    printf("\nArea of a rectangle is :%d",ans);
+}
+int rect(int length,int breadth)
+{
+    int Area;
+    Area=length*breadth;
+    return Area;
+}
+***************************************************************************************************
