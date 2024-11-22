@@ -1,0 +1,88 @@
+//without return,without parameter
+#include<stdio.h>
+void fact();
+void main()
+{
+    fact();
+}
+void fact()
+{
+    int n,fact;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    printf("\nthe factorial of a number is :%d",fact);
+}
+***************************************************************************************
+
+//without return,with parameter
+#include<stdio.h>
+void fact(int);
+void main()
+{
+    int n;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    fact(n);
+}
+void fact(int n)
+{ 
+    int fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    printf("\nthe factorial of a number is :%d",fact);
+}
+**************************************************************************************
+
+//with return,without parameter
+#include<stdio.h>
+int fact();
+void main()
+{
+    int ans;
+    ans=fact();
+    printf("\nthe factorial of a number is :%d",ans);
+}
+int fact()
+{ 
+    int n,fact;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    return fact;
+    
+}
+**************************************************************************************
+
+//with return,with parameter
+#include<stdio.h>
+int fact(int);
+void main()
+{
+    int n,ans;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    ans=fact(n);
+    printf("\nthe factorial of a number is :%d",ans);
+}
+int fact(int n)
+{ 
+    int fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    return fact;
+    
+}
+*******************************************************************************************
