@@ -1,0 +1,112 @@
+//without return type,without parameter
+#include<stdio.h>
+void num();
+void main()
+{
+    num();
+}
+void num()
+{
+    int a;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("\nThe given number is even");
+    }
+    else
+    {
+        printf("\nThe given number is odd");
+    }
+}
+***********************************************************************************
+
+//without return type,with parameter
+#include<stdio.h>
+void num(int);
+void main()
+{
+    int a;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    num(a);
+}
+void num(int a)
+{
+    
+    if(a%2==0)
+    {
+        printf("\nThe given number is even");
+    }
+    else
+    {
+        printf("\nThe given number is odd");
+    }
+}
+********************************************************************************
+
+//with return type,without parameter
+#include<stdio.h>
+int num();
+void main()
+{
+    int ans;
+    ans=num();
+    if(ans==1)
+    {
+    printf("\nThe given number is even");
+    }
+    else
+    {
+        printf("\nThe given number is odd");
+    }
+}
+int num()
+{
+    int a,even,odd;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+**************************************************************************************************
+
+//with return type,with parameter
+#include<stdio.h>
+int num(int);
+void main()
+{
+    int a,ans;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    ans=num(a);
+    if(ans==1)
+    {
+    printf("\nThe given number is even");
+    }
+    else
+    {
+        printf("\nThe given number is odd");
+    }
+}
+int num(int a)
+{
+    
+    if(a%2==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+**********************************************************************
