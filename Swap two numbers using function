@@ -1,0 +1,43 @@
+//without return,without parameter
+
+
+#include<stdio.h>
+void swap();
+void main()
+{
+    
+    swap();
+}
+void swap()
+{
+    int a,b,t;
+    printf("Enter the numbers:");
+    scanf("%d%d",&a,&b);
+    t=a;
+    a=b;
+    b=t;
+    printf("\na=%d,b=%d",a,b);
+}
+**********************************************************************************************
+
+//without return,with parameter
+
+
+#include<stdio.h>
+void swap(int,int);
+void main()
+{
+    int a,b;
+    printf("Enter the numbers:");
+    scanf("%d%d",&a,&b);
+    swap(a,b);
+}
+void swap(int a,int b)
+{
+    int t;
+    t=a;
+    a=b;
+    b=t;
+    printf("\na=%d,b=%d",a,b);
+}
+*******************************************************************************************************
